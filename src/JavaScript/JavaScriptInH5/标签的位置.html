@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--
+        defer属性，告诉浏览器立即下载，但延迟执行
+        只适用于外部脚本文件，有些浏览器会忽略这个属性，像平常一样处理脚本。把延迟脚本放在页面底部仍然是最佳选择
+    -->
+    <script type="text/javascript" defer="defer" src="example1.js"></script>
+
+
+    <!--
+        async属性，告诉浏览器下载，但与defer不同的是，标记为async的脚本并不保证按照指定它们的先后顺序执行
+        只适用于外部脚本文件
+    -->
+    <script type="text/javascript" async src="example2.js"></script>
+
+</head>
+<body>
+
+<script>
+    console.log('============adf=f=============');
+</script>
+
+<h1>测试文本</h1>
+
+
+</body>
+</html>
