@@ -41,11 +41,18 @@ var nowDate = Date.now();
 /*
 *   继承的方法
 * */
-
+// Date类型重写了 toLocaleString(), toString() 和 valueOf() 方法
+// toLocaleString(), toString() 返回字符串
+// valueOf() 返回日期的毫秒表示
 
 /*
 *   日期格式化方法
 * */
+// toDateString() 以特定于实现的格式显示星期几、月、日和年
+// toTimeString() 以特定于实现的格式显示时、分、秒和时区
+// toLocaleDateString() 以特定于地区的格式显示星期几、月、日和年
+// toLocaleTimeString() 以特定于实现的格式显示时、分、秒
+// toUTCString()    以特定于实现的格式完整的UTC日期
 
 /*
 *   日期／时间组件方法
